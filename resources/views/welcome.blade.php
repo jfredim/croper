@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+    
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+       <title> Menu Principal  </title> 
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -64,6 +65,8 @@
         </style>
     </head>
     <body>
+    
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -79,18 +82,20 @@
                 </div>
             @endif
 
+
             <div class="content">
-                <div class="title m-b-md">
-                    Figuras Geometricas
+              
+                <div class="title m-b-md" style="color: #1403e7">
+                    Figuras Geometricas 
                 </div>
              <div class="pull-left"><h3>Por John Fredy Gaviria E.</h3></div>
 
              <div class="pull-left">Prueba Tecnica Croper</div>
-
+                    <br>
                 <div class="links">
-                   <a href="{{action('TiposController@index')}}" title="Ingresar Tipos">Tipos</a>
-                   <a href="{{action('SubtiposController@index')}}" title="Ingresar Subtipos">Subtipos</a>
-                   <a href="{{action('FigurasController@index')}}" title="Ingresar Figuras ">Figuras</a>
+                   <a style="color:#ff0000"  href="{{action('TiposController@index')}}" title="Ingresar Tipos">Tipos</a>
+                   <a style="color:#ff0000" href="{{action('SubtiposController@index')}}" title="Ingresar Subtipos">Subtipos</a>
+                   <a style="color:#ff0000" href="{{action('FigurasController@index')}}" title="Ingresar Figuras ">Figuras</a>
 
                 </div>
             </div>
